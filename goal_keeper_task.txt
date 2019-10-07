@@ -1,0 +1,48 @@
+void ControlGoalkeeper(void *p)
+{
+    //int x = 3, y = 30;
+    //int x = GOALKEEPER_X_MAX, y = 40;
+    int x = 4, y = 30;
+    mesh_packet_t GKPkt;
+    int timeout_ms = 500;
+
+    while (1)
+    {
+        if (wireless_get_rx_pkt(&GKPkt, timeout_ms) && (Player2_Tx_Address == GKPkt.nwk.src))
+        {
+            printf("G\n");
+            wireless_flush_rx();
+            if(!(memcmp(GKPkt.data, "right", 5)))
+            {
+                if(y != GOALKEEPER_Y_MAX)
+                {
+                    y += 3;
+                }
+            }
+            else if(!(memcmp(GKPkt.data, "left", 4)))
+            {
+                if(y != GOALKEEPER_Y_MIN)
+                {
+                    y -= 3;
+                }
+            }
+            else if(!(memcmp(GKPkt.data, "up", 2)))
+            {
+                if(x != GOALKEEPER_X_MIN)
+                {
+                    x -= 3;
+                }
+            }
+            else if(!(memcmp(GKPkt.data, "down", 4)))
+            {
+                if(x != GOALKEEPER_X_MAX)
+                {
+                    x += 3;
+                }
+            }
+        }
+        mat.drawGoalkeeper(x, y, GOALKEEPER_COLOR);
+        mat.drawGoalPost(GOALPOST, mat.goalpost_color);
+    }
+    vTaskDelay(500);
+}
