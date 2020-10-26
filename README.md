@@ -5,8 +5,11 @@ http://socialledge.com/sjsu/index.php/F18:_Goals_of_Glory
 https://www.youtube.com/watch?v=zId_HAEDWms
 
 
+- The folder LED_Matrix contains device driver for the 64x64 LED Matrix which includes the animation and game logic that is utilized between the display and 3 SJ-One Microcontrollers.
 
--GAME Description and Statistics:
+- The Folders LPC_GYRO_player and LPC_goalkeeper consists of MPU 6050 device driver logic along with Nordic Wireless Implementation for the game to work synchronously.
+
+# GAME Description and Statistics:
 
 -2-Player Penalty shootout mode
 
