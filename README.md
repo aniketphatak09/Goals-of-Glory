@@ -1,7 +1,7 @@
-->Link to the original report with all details
+->Link to the original report with all details:
 http://socialledge.com/sjsu/index.php/F18:_Goals_of_Glory
 
-->Demo Video
+->Demo Video:
 https://www.youtube.com/watch?v=zId_HAEDWms
 
 
