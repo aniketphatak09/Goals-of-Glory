@@ -27,10 +27,10 @@ https://www.youtube.com/watch?v=zId_HAEDWms
 
 # Issues, Challenges and solutions to get past them
 
--1. RGB LED Matrix Display driver:
+1. RGB LED Matrix Display driver:
 
 
-a) Writing the driver function on our own was a challenge. We were able to easily glow a single row in the matrix. However, the challenge lied in glowing a single pixel value at a specified location. And lack of datasheet made it even more difficult. Once we got the control over glowing a single LED (check updateDisplay function as shown above), we were able to implement various functions to draw lines, digits, text, ball, and goalkeeper.
+a) Writing the driver function on our own was a challenge. We were able to easily glow a single row in the matrix. However, the challenge was in glowing a single pixel value at a specified location. And lack of datasheet made it even more difficult. Once we got the control over glowing a single LED (check updateDisplay function ), we were able to implement various functions to draw lines, digits, text, ball, and goalkeeper.
 
 b) Matrix flickering problem in which pixels on the screen weren't consistently bright when a particular animation was going on:
 
@@ -46,24 +46,26 @@ The solution to this was creating an array of size 64x64 and a dedicated task to
 
 e) The ungraceful transition of the ball from the one half of the LED matrix to the other half:
 
-The solution to this calculated the new X value and new color in drawPixel function. Here we are calling calculateMatrixposition fucntion which will calculate and return new x value and new color value.
+The solution to this calculated using the new X value and new color in drawPixel function. Here we are calling calculateMatrixposition fucntion which will calculate and return new x value and new color value.
 
 
--2. Designing the Gyroscope and Accelerometer driver for goalkeeper and player movements:
 
-a) Lose connection on MPU 6050
+2. Designing the Gyroscope and Accelerometer driver for goalkeeper and player movements:
 
-The solution to this was hard wiring the MPU 6050 sensor to a general purpose PCB so that connection issues occur. Once this was done, we were able to successfully get the tilt.
+a) Loss of connection on MPU 6050
+
+The solution to this was hard wiring the MPU 6050 sensor to a general purpose PCB so that connection issues do not occur. Once this was done, we were able to successfully get the tilt.
 
 b) Precision for getting accurate direction
 
-Since we have calculated five directions for ball movement, finding accurate gyroscope and accelerometer values with proper mapping was critical to our application.
+Since we have calculated five directions for ball movement, finding accurate gyroscope and accelerometer values(threshold) with proper mapping was critical to our application.
 
--3. Designing the Wireless driver a) System freeze when no data sent
+3. Designing the Wireless driver 
+a) System freeze when no data sent
 
 We introduced a NACK to indicate that no data sent hence whenever this condition occurs it waits for the new data to be sent.
 
--4. Dimensions of power pins for the PCB design
+4. Dimensions of power pins for the PCB design
 
 a) Accommodate the exact dimensions of the 5V Power pin on the PCB design.
 
