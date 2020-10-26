@@ -27,7 +27,7 @@ https://www.youtube.com/watch?v=zId_HAEDWms
 
 # Issues, Challenges and solutions to get past them
 
-1. RGB LED Matrix Display driver:
+-RGB LED Matrix Display driver:
 
 a) Writing the driver function on our own was a challenge. We were able to easily glow a single row in the matrix. However, the challenge lied in glowing a single pixel value at a specified location. And lack of datasheet made it even more difficult. Once we got the control over glowing a single LED (check updateDisplay function as shown above), we were able to implement various functions to draw lines, digits, text, ball, and goalkeeper.
 
@@ -48,7 +48,7 @@ e) The ungraceful transition of the ball from the one half of the LED matrix to 
 The solution to this calculated the new X value and new color in drawPixel function. Here we are calling calculateMatrixposition fucntion which will calculate and return new x value and new color value.
 
 
-2. Designing the Gyroscope and Accelerometer driver for goalkeeper and player movements:
+-Designing the Gyroscope and Accelerometer driver for goalkeeper and player movements:
 
 a) Lose connection on MPU 6050
 
