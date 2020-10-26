@@ -72,20 +72,20 @@ https://www.youtube.com/watch?v=zId_HAEDWms
   Since there is no datasheet available for the 64x64 RGB LED Matrix, hence it was a difficult task. We used a basic approximation to determine the pin dimensions that would fit   inside the PCB design such that it works just fine.
   
   
--References Used
+  # References Used
   
-[1] FreeRTOS
+[1] FreeRTOS https://www.freertos.org/
 
 [2] https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050
 
-[3] Everything You Didn't Want to Know About RGB Matrix Panels
+[3] Everything You Didn't Want to Know About RGB Matrix Panels https://www.sparkfun.com/news/2650
 
 [4] http://socialledge.com/sjsu/index.php/S18:_Death_Race
 
-[5] Adafruit Github Library
+[5] Adafruit Github Library https://github.com/adafruit/Adafruit-GFX-Library
 
 [6] https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/
 
-[7] Nordic Datasheet
+[7] Nordic Datasheet https://www.sparkfun.com/datasheets/Components/SMD/nRF24L01Pluss_Preliminary_Product_Specification_v1_0.pdf
 
 [8] https://www.sparkfun.com/products/14824
