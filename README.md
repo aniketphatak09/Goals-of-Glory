@@ -76,7 +76,7 @@ https://www.youtube.com/watch?v=zId_HAEDWms
   
 [1] FreeRTOS https://www.freertos.org/
 
-[2] https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050
+[2] MPU 6050 driver https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050
 
 [3] Everything You Didn't Want to Know About RGB Matrix Panels https://www.sparkfun.com/news/2650
 
