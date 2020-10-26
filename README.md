@@ -70,3 +70,22 @@ https://www.youtube.com/watch?v=zId_HAEDWms
   a) Accommodate the exact dimensions of the 5V Power pin on the PCB design.
 
   Since there is no datasheet available for the 64x64 RGB LED Matrix, hence it was a difficult task. We used a basic approximation to determine the pin dimensions that would fit   inside the PCB design such that it works just fine.
+  
+  
+-References Used
+  
+[1] FreeRTOS
+
+[2] https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050
+
+[3] Everything You Didn't Want to Know About RGB Matrix Panels
+
+[4] http://socialledge.com/sjsu/index.php/S18:_Death_Race
+
+[5] Adafruit Github Library
+
+[6] https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/
+
+[7] Nordic Datasheet
+
+[8] https://www.sparkfun.com/products/14824
