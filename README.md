@@ -60,7 +60,7 @@ https://www.youtube.com/watch?v=zId_HAEDWms
 
   Since we have calculated five directions for ball movement, finding accurate gyroscope and accelerometer values(threshold) with proper mapping was critical to our application.
 
-**Designing the Wireless driver **
+**Designing the Wireless driver**
 
   a) System freeze when no data sent
 
