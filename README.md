@@ -27,7 +27,7 @@ https://www.youtube.com/watch?v=zId_HAEDWms
 
 # Issues, Challenges and solutions to get past them
 
-1. RGB LED Matrix Display driver:
+-RGB LED Matrix Display driver:
 
 
   a) Writing the driver function on our own was a challenge. We were able to easily glow a single row in the matrix. However, the challenge was in glowing a single pixel value     at a specified location. And lack of datasheet made it even more difficult. Once we got the control over glowing a single LED (check updateDisplay function ), we were able to   implement various functions to draw lines, digits, text, ball, and goalkeeper.
