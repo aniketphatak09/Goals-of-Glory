@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=zId_HAEDWms
 
 
 
-2. Designing the Gyroscope and Accelerometer driver for goalkeeper and player movements:
+**Designing the Gyroscope and Accelerometer driver for goalkeeper and player movements:
 
   a) Loss of connection on MPU 6050
 
