@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=zId_HAEDWms
 
 
 
-**Designing the Gyroscope and Accelerometer driver for goalkeeper and player movements:
+**Designing the Gyroscope and Accelerometer driver for goalkeeper and player movements:**
 
   a) Loss of connection on MPU 6050
 
@@ -60,12 +60,13 @@ https://www.youtube.com/watch?v=zId_HAEDWms
 
   Since we have calculated five directions for ball movement, finding accurate gyroscope and accelerometer values(threshold) with proper mapping was critical to our application.
 
-3. Designing the Wireless driver 
+**Designing the Wireless driver **
+
   a) System freeze when no data sent
 
   We introduced a NACK to indicate that no data sent hence whenever this condition occurs it waits for the new data to be sent.
 
-4. Dimensions of power pins for the PCB design
+**Dimensions of power pins for the PCB design**
 
   a) Accommodate the exact dimensions of the 5V Power pin on the PCB design.
 
