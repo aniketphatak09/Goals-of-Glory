@@ -73,7 +73,7 @@ https://www.youtube.com/watch?v=zId_HAEDWms
   Since there is no datasheet available for the 64x64 RGB LED Matrix, hence it was a difficult task. We used a basic approximation to determine the pin dimensions that would fit   inside the PCB design such that it works just fine.
   
   
-  # References Used
+  # References:
   
 [1] FreeRTOS https://www.freertos.org/
 
